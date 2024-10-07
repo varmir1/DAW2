@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="index.css" /> 
+    <head>
+  	    <meta charset="UTF-8">
+  	    <title>Calculadora</title>
+    </head>
+    <body>
+        <div class="general">
+            <div class="result">
+                    <input type="text" readonly id="input" class="inputResult"> <!-- opstring para más seguridad -->
+            </div> <br>
+            <div class="gridPrincipal">
+                <div class="gridLeft">
+                    <button onclick="thisDisplay('1')" class="button">1</button>
+                    <button onclick="thisDisplay('2')" class="button">2</button>
+                    <button onclick="thisDisplay('3')" class="button">3</button>
+                    <button onclick="thisDisplay('+')" class="buttonEspecial">+</button>
+                    
+                    <button onclick="thisDisplay('4')" class="button">4</button>
+                    <button onclick="thisDisplay('5')" class="button">5</button>
+                    <button onclick="thisDisplay('6')" class="button">6</button>
+                    <button onclick="thisDisplay('-')" class="buttonEspecial">-</button>
+                    
+                    <button onclick="thisDisplay('7')" class="button">7</button>
+                    <button onclick="thisDisplay('8')" class="button">8</button>
+                    <button onclick="thisDisplay('9')" class="button">9</button>
+                    <button onclick="thisDisplay('*')" class="buttonEspecial">x</button>
+                    
+                    <button onclick="thisDisplay('0')" class="buttonCero">0</button>
+                    <button onclick="thisDisplay('.')" class="buttonEspecial">.</button>
+                    <button onclick="thisDisplay('/')" class="buttonEspecial">÷</button>
+                </div> 
+                <div class="gridRight">
+                    <button onclick="thisDelete()" class="buttonDel">⌫</button>
+                    <button onclick="thisClear()"class="buttonClear">C</button>
+                    <button onclick="thisCalculate()" class="buttonSame">=</button>
+                </div>               
+            </div>
+        <script src="built/index.js"></script>
+    </body>
+</html>
