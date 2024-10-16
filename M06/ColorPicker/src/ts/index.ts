@@ -9,3 +9,4 @@ for (let i = 0; 1 < botones.length; i++){
         document.getElementById("caja")!.style.backgroundColor = botones[i].id;
     });
 }
+
